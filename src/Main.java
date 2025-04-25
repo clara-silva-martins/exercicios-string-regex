@@ -105,36 +105,80 @@ public class Main {
 
         //EXERCICIO REGEX FORMATAR CPF
 
-        System.out.println("Digite o CPF: ");
-        Scanner sc = new Scanner(System.in);
-        String cpf = sc.nextLine();
+//        System.out.println("Digite o CPF: ");
+//        Scanner sc = new Scanner(System.in);
+//        String cpf = sc.nextLine();
+//
+//        System.out.printf("O CPF é: %s", verificarCpf(cpf));
+//
+//    }
+//
+//        public static String verificarCpf(String cpf) {
+//
+//            String regexFormat = "(\\d{3}).(\\d{3}).(\\d{3}-(\\d{2}))";
+//            String regex = "(\\d{3})(\\d{3})(\\d{3})(\\d{2})";
+//
+//            Pattern patternFormat = Pattern.compile(regexFormat);
+//            Pattern pattern = Pattern.compile(regex);
+//
+//            Matcher matcherFormat = patternFormat.matcher(cpf);
+//            Matcher matcher = pattern.matcher(cpf);
+//
+//            if (matcherFormat.matches()) {
+//                System.out.printf(cpf);
+//            } else if (matcher.matches()) {
+//                    return String.format("%s.%s.%s-%s", matcher.group(1), matcher.group(2),
+//                            matcher.group(3), matcher.group(4));
+//            }
+//            return cpf +  " está no formato inválido";
+//        }
 
-        System.out.printf("O CPF é: %s", verificarCpf(cpf));
+
+        //EXERCICIO EXTRAIR HASHTAG DO TEXTO
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Digite o texto: ");
+//        String texto = sc.nextLine();
+//
+//        System.out.printf(verificarTexto(texto));
+//    }
+//
+//    public static String verificarTexto(String texto) {
+//        String regex = "#\\w+";
+//        Pattern pattern = Pattern.compile(regex);
+//        Matcher matcher = pattern.matcher(texto);
+//
+//        System.out.println("Hashtags encontradas: ");
+//
+//        while (matcher.find()) {
+//            System.out.println(matcher.group());
+//        }
+//        return texto;
+//    }
+//
+//}
+
+
+        //VALIDANDO SENHAS COM REGEX
+
+//        System.out.println("Digite a senha: ");
+//        Scanner sc = new Scanner(System.in);
+//        String senha = sc.nextLine();
+//
+//        System.out.printf(verificaSenha(senha));
+//
+//    }
+//
+//    public static String verificaSenha(String senha) {
+//        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=!]).{8,}$";
+//        Pattern  pattern = Pattern.compile(regex);
+//        Matcher matcher = pattern.matcher(senha);
+//
+//        if (matcher.matches()) {
+//            return "Senha válida";
+//        } else {
+//            return "Senha inválida";
+//        }
 
     }
-
-        public static String verificarCpf(String cpf) {
-
-            String regexFormat = "(\\d{3}).(\\d{3}).(\\d{3}-(\\d{2}))";
-            String regex = "(\\d{3})(\\d{3})(\\d{3})(\\d{2})";
-
-            Pattern patternFormat = Pattern.compile(regexFormat);
-            Pattern pattern = Pattern.compile(regex);
-
-            Matcher matcherFormat = patternFormat.matcher(cpf);
-            Matcher matcher = pattern.matcher(cpf);
-
-            if (matcherFormat.matches()) {
-                System.out.printf(cpf);
-            } else if (matcher.matches()) {
-                    return String.format("%s.%s.%s-%s", matcher.group(1), matcher.group(2),
-                            matcher.group(3), matcher.group(4));
-            }
-            return cpf +  " está no formato inválido";
-        }
-
-
-    }
-
-
-
+}
